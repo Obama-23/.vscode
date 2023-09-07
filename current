@@ -1,0 +1,21 @@
+from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
+# Define the vertices of the triangle
+x = [0, 1, 0]
+
+y = [0, 0, 1]
+z = [0, 0, 0]
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# Plot the triangle
+ax.plot_trisurf(x, y, z)
+
+# Set plot parameters
+ax.set_xlabel('X')
+
+ax.set_ylabel('Y')
+ax.set_zlabel('Z')
+# Show the plot
+plt.show()
+

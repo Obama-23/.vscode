@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "xprotocol",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "jalil",
+            "database": "helloworld",
+            "username": "admin",
+            "password": "admin123",
+            "connectionTimeout": 30
+        }
+    ],
+    "python.testing.pytestArgs": [
+        "Website"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

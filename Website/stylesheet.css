@@ -1,0 +1,75 @@
+h3 {
+    color:blue;
+    stroke:black;
+    stroke-opacity: initial;
+}
+
+body{
+    background-color: rgb(211, 181, 144);
+}
+
+h1{
+    position: sticky;
+    font-style: italic;
+}
+button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+    display: flow-root;
+}
+
+button:active{
+    transform: scale(0.96);
+}
+
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  img{
+    image-rendering: pixelated;
+  }
+  /* The element to apply the animation to */
+.Buttons {
+    width: 150px;
+    height: 40px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+  }
+
+  h5{
+    color: red;
+    stroke: black;
+    stroke-width: 0cqh;
+  }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.chasing-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: none;
+  position: absolute;
+  transform-origin: center;
+  transition: transform 0.2s ease-out;
+}

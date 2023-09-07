@@ -1,0 +1,22 @@
+const button = document.getElementById("button");
+const container = document.querySelector(".container");
+
+const chaseSpeed = 0.02; // Adjust this for slower chasing
+
+document.addEventListener("mousemove", (event) => {
+    const cursorX = event.clientX;
+    const cursorY = event.clientY;
+
+    const buttonRect = button.getBoundingClientRect();
+    const buttonX = buttonRect.left + buttonRect.width / 2;
+    const buttonY = buttonRect.top + buttonRect.height / 2;
+
+    const angle = Math.atan2(cursorY - buttonY, cursorX - buttonX);
+
+    const deltaX = (cursorX - buttonX) * chaseSpeed;
+    const deltaY = (cursorY - buttonY) * chaseSpeed;
+
+    button.style.left = buttonX + deltaX + "px";
+    button.style.top = buttonY + deltaY + "px";
+    button.style.transform = `translate(-50%, -50%) rotate(${angle * (180 / Math.PI) + 90}deg)`;
+});

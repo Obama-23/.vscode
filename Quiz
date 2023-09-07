@@ -1,0 +1,47 @@
+import time
+
+def ask_question(question, answer, choice):
+    user_answer = input(question).strip().lower()
+    if user_answer == answer:
+        print("Correct answer!")
+        return 1
+    else:
+        print(f"Incorrect! The answer was '{answer}'.")
+        return 0
+
+def main():
+    print("Welcome to the Time Quiz!")
+    time.sleep(2.25)
+
+    while True:
+        try:
+            age = int(input("How old are you?\nRemember you need to be over the age of 13: "))
+            if age >= 13:
+                break
+            else:
+                print("Sorry, you must be over 13 years old to continue.")
+        except ValueError:
+            print("Age should be a number.")
+    
+    TOS = input("Do you agree to our Terms Of Use? (Yes/No): ").strip().lower()
+    if TOS != "yes":
+        print("Sorry, but you have to accept our Terms Of Use.")
+        exit()
+
+    print("Great! Let's start the quiz.")
+    time.sleep(2)
+
+    questions = [
+        ("When was Unity Engine was created? (year) ", "2005", "A-2004\nB-2006\nC-2005\nD-2007"),
+        ("When was the first telivision was invented (year) ", "1927", "A-1918\nB-1924\nC-1935\nD-1927"),
+    ]
+
+    score = 0
+    for question, answer, choice in questions:
+        score += ask_question(question, answer, choice)
+
+    print(f"Total score: {score}/{len(questions)}")
+
+if __name__ == "__main__":
+    main()
+# for real?
