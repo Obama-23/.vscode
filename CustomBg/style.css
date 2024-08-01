@@ -6,7 +6,7 @@
 }
 body{
     height: 100vh;
-    background: #484f51;
+    background: #c9c6c6;
     overflow: hidden;
 }
 .circle{
@@ -14,11 +14,11 @@ body{
     bottom: 0;
     width: 20px;
     aspect-ratio: 1/1;
-    background: #d7d738;
-    box-shadow: 0 0 10px #d7d738,
-    0 0 20px #d7d738,
-    0 0 30px #d7d738,
-    0 0 50px #d7d738;
+    background: #0f9c24;
+    box-shadow: 0 0 10px #070700,
+    0 0 20px #120fcf,
+    0 0 30px #120fcf,
+    0 0 50px #120fcf;
     border-radius: 50%;
     animation: animate 5s linear forwards;
 }
@@ -43,5 +43,5 @@ body{
     width: 50%;
     height: 100vh;
     opacity: 0.5s;
-    background: linear-gradient(#d7d738,transparent);
+    background: linear-gradient(#120fcf,transparent);
 }

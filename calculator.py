@@ -18,6 +18,7 @@ def btn_click(item):
 # 'bt_clear' function :This is used to clear 
 # the input field
 
+print ("hello")
 def bt_clear(): 
     global expression 
     expression = "" 
